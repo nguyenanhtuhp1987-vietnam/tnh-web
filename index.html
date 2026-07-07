@@ -126,6 +126,36 @@
   .float-zalo a{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.35rem;box-shadow:0 8px 22px rgba(0,0,0,.3)}
   .fz{background:#0068ff;color:#fff;font-weight:800;font-size:.8rem!important;font-family:var(--sans)}
   .fp{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--deep)}
+
+  /* ===== Mobile ===== */
+  @media(max-width:700px){
+    table{min-width:0;width:100%}
+    thead{display:none}
+    tbody tr{display:block;padding:12px 14px;border-top:1px solid #efe9d8}
+    tbody td{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:5px 0;border:0;white-space:normal;text-align:right}
+    tbody td:first-child{display:block;font-family:var(--serif);font-size:.98rem;padding:0 0 6px;text-align:left}
+    tbody td::before{content:attr(data-label);font-weight:500;color:#4a5f59;font-size:.8rem}
+    tbody td:first-child::before{content:none}
+  }
+  @media(max-width:560px){
+    .container{padding:0 16px}
+    section{padding:40px 0}
+    .hero{padding:38px 0 44px}
+    .hero .container{gap:26px}
+    .hero-cta .btn{width:100%;justify-content:center}
+    .usp{padding:22px 0}
+    .usp .container{grid-template-columns:1fr;gap:14px}
+    .brand span{font-size:.98rem}
+    .topbar .btn{padding:7px 12px;font-size:.78rem}
+    .hk-body{padding:26px 20px}
+    .hk-body h3{font-size:1.35rem}
+    .sec-head{margin-bottom:28px}
+  }
+  /* fix grid blowout + chong tran ngang */
+  html,body{max-width:100%;overflow-x:hidden}
+  .hero .container>*,.usp .container>*,.gal-grid>*{min-width:0}
+  .hero-img img{height:auto}
+  img{height:auto}
 </style>
 </head>
 <body>
@@ -195,19 +225,19 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>Set quà Tứ Quý + hộp túi</td><td><span class="le">486.000</span></td><td>399.000</td><td>394.000</td><td class="best">384.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>Set Tâm Giao (2 tổ sợi ngắn) + hộp túi</td><td><span class="le">586.000</span></td><td>499.000</td><td>489.000</td><td class="best">469.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>Set Tâm Giao (2 tổ sợi dài) + hộp túi</td><td><span class="le">786.000</span></td><td>650.000</td><td>640.000</td><td class="best">620.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>Hộp 1 tổ sợi ngắn 8g</td><td><span class="le">255.000</span></td><td>200.000</td><td>195.000</td><td class="best">185.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>Hộp 1 tổ sợi dài 9g</td><td><span class="le">350.000</span></td><td>280.000</td><td>275.000</td><td class="best">265.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>100G yến tinh chế sợi dài + hộp túi</td><td><span class="le">3.550.000</span></td><td>2.750.000</td><td>2.700.000</td><td class="best">2.600.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>50G yến tinh chế sợi dài + hộp túi</td><td><span class="le">1.800.000</span></td><td>1.450.000</td><td>1.400.000</td><td class="best">1.320.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>30G yến tinh chế sợi dài + hộp túi</td><td><span class="le">1.200.000</span></td><td>900.000</td><td>810.000</td><td class="best">780.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>100G yến tinh chế sợi ngắn + hộp túi</td><td><span class="le">3.000.000</span></td><td>2.350.000</td><td>2.350.000</td><td class="best">2.250.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>50G yến tinh chế sợi ngắn + hộp túi</td><td><span class="le">1.600.000</span></td><td>1.250.000</td><td>1.175.000</td><td class="best">1.125.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>30G yến tinh chế sợi ngắn + hộp túi</td><td><span class="le">972.000</span></td><td>850.000</td><td>705.000</td><td class="best">675.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>Set yến chưng 6 hũ + hộp túi</td><td><span class="le">250.000</span></td><td>240.000</td><td>230.000</td><td class="best">210.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
-          <tr><td>Set Yến Chưng Hoàng Kim (15 hũ)</td><td><span class="le">1.200.000</span></td><td>1.100.000</td><td>1.050.000</td><td class="best">990.000</td><td class="contact"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>Set quà Tứ Quý + hộp túi</td><td data-label="Giá lẻ"><span class="le">486.000</span></td><td data-label="5–10 hộp">399.000</td><td data-label="11–30 hộp">394.000</td><td class="best" data-label="31–99 hộp">384.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>Set Tâm Giao (2 tổ sợi ngắn) + hộp túi</td><td data-label="Giá lẻ"><span class="le">586.000</span></td><td data-label="5–10 hộp">499.000</td><td data-label="11–30 hộp">489.000</td><td class="best" data-label="31–99 hộp">469.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>Set Tâm Giao (2 tổ sợi dài) + hộp túi</td><td data-label="Giá lẻ"><span class="le">786.000</span></td><td data-label="5–10 hộp">650.000</td><td data-label="11–30 hộp">640.000</td><td class="best" data-label="31–99 hộp">620.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>Hộp 1 tổ sợi ngắn 8g</td><td data-label="Giá lẻ"><span class="le">255.000</span></td><td data-label="5–10 hộp">200.000</td><td data-label="11–30 hộp">195.000</td><td class="best" data-label="31–99 hộp">185.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>Hộp 1 tổ sợi dài 9g</td><td data-label="Giá lẻ"><span class="le">350.000</span></td><td data-label="5–10 hộp">280.000</td><td data-label="11–30 hộp">275.000</td><td class="best" data-label="31–99 hộp">265.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>100G yến tinh chế sợi dài + hộp túi</td><td data-label="Giá lẻ"><span class="le">3.550.000</span></td><td data-label="5–10 hộp">2.750.000</td><td data-label="11–30 hộp">2.700.000</td><td class="best" data-label="31–99 hộp">2.600.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>50G yến tinh chế sợi dài + hộp túi</td><td data-label="Giá lẻ"><span class="le">1.800.000</span></td><td data-label="5–10 hộp">1.450.000</td><td data-label="11–30 hộp">1.400.000</td><td class="best" data-label="31–99 hộp">1.320.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>30G yến tinh chế sợi dài + hộp túi</td><td data-label="Giá lẻ"><span class="le">1.200.000</span></td><td data-label="5–10 hộp">900.000</td><td data-label="11–30 hộp">810.000</td><td class="best" data-label="31–99 hộp">780.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>100G yến tinh chế sợi ngắn + hộp túi</td><td data-label="Giá lẻ"><span class="le">3.000.000</span></td><td data-label="5–10 hộp">2.350.000</td><td data-label="11–30 hộp">2.350.000</td><td class="best" data-label="31–99 hộp">2.250.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>50G yến tinh chế sợi ngắn + hộp túi</td><td data-label="Giá lẻ"><span class="le">1.600.000</span></td><td data-label="5–10 hộp">1.250.000</td><td data-label="11–30 hộp">1.175.000</td><td class="best" data-label="31–99 hộp">1.125.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>30G yến tinh chế sợi ngắn + hộp túi</td><td data-label="Giá lẻ"><span class="le">972.000</span></td><td data-label="5–10 hộp">850.000</td><td data-label="11–30 hộp">705.000</td><td class="best" data-label="31–99 hộp">675.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>Set yến chưng 6 hũ + hộp túi</td><td data-label="Giá lẻ"><span class="le">250.000</span></td><td data-label="5–10 hộp">240.000</td><td data-label="11–30 hộp">230.000</td><td class="best" data-label="31–99 hộp">210.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
+          <tr><td>Set Yến Chưng Hoàng Kim (15 hũ)</td><td data-label="Giá lẻ"><span class="le">1.200.000</span></td><td data-label="5–10 hộp">1.100.000</td><td data-label="11–30 hộp">1.050.000</td><td class="best" data-label="31–99 hộp">990.000</td><td class="contact" data-label="Từ 100 hộp"><a href="https://zalo.me/0969850153">Liên hệ</a></td></tr>
         </tbody>
       </table>
     </div>
